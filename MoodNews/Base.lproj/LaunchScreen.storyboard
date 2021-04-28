@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pile-of-newspapers" translatesAutoresizingMaskIntoConstraints="NO" id="lDz-6Y-GEg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新聞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iex-bc-asy">
+                                <rect key="frame" x="96" y="233" width="222" height="132.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iex-bc-asy" secondAttribute="height" multiplier="67:40" id="w1o-Qv-vDZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="100"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隨心看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKN-Na-glV">
+                                <rect key="frame" x="56.333333333333343" y="390" width="301.33333333333326" height="128.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KKN-Na-glV" secondAttribute="height" multiplier="151:60" constant="-21.71666666666664" id="6Cw-x8-MLW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="100"/>
+                                <color key="textColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iex-bc-asy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4hX-yt-VQ4"/>
+                            <constraint firstItem="KKN-Na-glV" firstAttribute="top" secondItem="iex-bc-asy" secondAttribute="bottom" constant="24.666666666666629" id="8kV-pb-4O8"/>
+                            <constraint firstItem="KKN-Na-glV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F2G-wd-aSq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDz-6Y-GEg" secondAttribute="trailing" id="KXg-gm-gPg"/>
+                            <constraint firstItem="iex-bc-asy" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.536" id="ZLg-r7-4wq"/>
+                            <constraint firstItem="lDz-6Y-GEg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aju-ZZ-EgG"/>
+                            <constraint firstItem="iex-bc-asy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="189" id="bTg-5j-zVK"/>
+                            <constraint firstItem="lDz-6Y-GEg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jc3-J2-CPm"/>
+                            <constraint firstAttribute="bottom" secondItem="lDz-6Y-GEg" secondAttribute="bottom" id="oXy-dn-G2z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pile-of-newspapers" width="1000" height="560"/>
+    </resources>
+</document>
